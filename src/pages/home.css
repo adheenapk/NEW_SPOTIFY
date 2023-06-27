@@ -77,9 +77,9 @@ body{
     border: #03C04A;
   }
   @media screen and (max-width : 600px) {
-    .bg{
-        height: fit-content;
-        width: fit-content;
+    .bg img{
+        height: auto;
+        width: 100%;
 
     
     }
