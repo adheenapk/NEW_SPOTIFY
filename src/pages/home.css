@@ -81,5 +81,15 @@ body{
         height: fit-content;
         width: fit-content;
 
+    
     }
-  }
+    .music{
+            position: absolute;
+            top: 35%;
+            left: 25%;
+            color: whitesmoke;
+            font-size: 30px;
+            font-weight:500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      }
