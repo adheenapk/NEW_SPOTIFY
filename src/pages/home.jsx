@@ -92,9 +92,11 @@ align-items: center;
   background-color: #f8f8f6;
   border: yellow;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
   .music{
     position: absolute;
+    top: 30rem;
+    left: 10rem;
     font-size: 25px;
     font-weight:500;
     left: 10px;
