@@ -92,12 +92,12 @@ align-items: center;
   background-color: #f8f8f6;
   border: yellow;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:400px){
   .music{
     position: absolute;
     top: 10rem;
     left: 10rem;
-    font-size:4rem; 
+    font-size:8rem; 
     font-weight:500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
@@ -119,6 +119,13 @@ align-items: center;
     font-size: 15px;
     font-weight:900;
 }
+.btn{
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+    font-weight: bold;
+}
+
 }
 `;
 
