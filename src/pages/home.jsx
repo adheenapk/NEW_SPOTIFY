@@ -40,7 +40,7 @@ align-items: center;
 .btn{
     color: white;
     position: absolute;
-    top: 34rem;
+    top: 33rem;
     left: 49rem;
     background-color: #03C04A;
     border-radius: 10rem;
@@ -60,8 +60,8 @@ align-items: center;
 }
 .music{
     position: absolute;
-    top: 30rem;
-    left: 15rem;
+    top: 18rem;
+    left: 21rem;
     color: whitesmoke;
     font-size: 7rem;
     font-weight:1000;
@@ -69,8 +69,8 @@ align-items: center;
 }
 .mill{
     position: absolute;
-    top: 50rem;
-    left: 16rem;
+    top: 26rem;
+    left: 37rem;
     color: whitesmoke;
     font-size: 1.8rem;
     font-weight:900;
@@ -78,8 +78,8 @@ align-items: center;
 }
 .count{
   position: absolute;
-    top: 55rem;
-    left: 17rem;
+    top: 28rem;
+    left: 50rem;
     color: whitesmoke;
     font-size: 1.5rem;
     font-weight:900;
