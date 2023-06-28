@@ -94,9 +94,8 @@ align-items: center;
 }
 @media screen and (max-width:400px){
   .music{
-    position: absolute;
     color: whitesmoke;
-    font-size: 13px;
+    font-size: 30px;
     font-weight:1000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
