@@ -95,11 +95,28 @@ align-items: center;
 @media screen and (max-width:400px){
   .music{
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     left: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
+}
+.mill{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight:900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.count{
+  position: absolute;
+    top: 10rem;
+    left: 10rem;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight:900;
 }
 }
 `;
