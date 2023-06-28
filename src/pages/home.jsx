@@ -61,15 +61,15 @@ align-items: center;
 .music{
     position: absolute;
     top: 30rem;
-    left: 20rem;
+    left: 15rem;
     color: whitesmoke;
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight:1000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .mill{
     position: absolute;
-    top: 35rem;
+    top: 45rem;
     left: 40rem;
     color: whitesmoke;
     font-size: 1.8rem;
@@ -78,7 +78,7 @@ align-items: center;
 }
 .count{
   position: absolute;
-    top: 40rem;
+    top: 55rem;
     left: 50rem;
     color: whitesmoke;
     font-size: 1.5rem;
