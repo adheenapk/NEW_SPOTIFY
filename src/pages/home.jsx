@@ -122,7 +122,7 @@ align-items: center;
     color: white;
     position: absolute;
     top: 62%;
-    left: 40%;
+    left: 38%;
     background-color: #03C04A;
     border-radius: 10rem;
     width: 110px;
