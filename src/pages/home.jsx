@@ -103,26 +103,26 @@ align-items: center;
 }
 .mill{
     position: absolute;
-    top: 45%;
-    left: 10%;
+    top: 50%;
+    left: 15%;
     color: whitesmoke;
-    font-size: 20px;
-    font-weight:900;
+    font-size: 15px;
+    font-weight:450;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .count{
   position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 60%;
+    left: 15%;
     color: whitesmoke;
-    font-size: 25px;
-    font-weight:900;
+    font-size: 15px;
+    font-weight:450;
 } 
 .btn{
     color: white;
     position: absolute;
     top: 58%;
-    left: 10%;
+    left: 15%;
     background-color: #03C04A;
     border-radius: 10rem;
     width: 110px;
