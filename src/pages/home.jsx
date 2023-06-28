@@ -122,7 +122,7 @@ align-items: center;
 .btn{
     position: absolute;
     top: 15rem;
-    left: 15rem;
+    left: 10rem;
     font-weight: bold;
 }
 
