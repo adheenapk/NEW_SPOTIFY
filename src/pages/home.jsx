@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const Navigation=styled.nav `position: absolute;
-height: 5rem ;
+height: 75px ;
 width: 100%;
 background: black;
 opacity: 70%;
@@ -15,8 +15,8 @@ justify-content: space-between;
 
 
 .image img {
-    width: 10rem;
-    height: 3rem;
+    width: 100px;
+    height: 60px;
     margin-left: 15rem;
   }
   
@@ -27,8 +27,8 @@ justify-content: space-between;
   
   li {
     color: white;
-    font-size: 1.5rem;
-    margin-right: 3rem;
+    font-size: 20px;
+    margin-right:35px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 `;
@@ -40,13 +40,12 @@ align-items: center;
 .btn{
     color: white;
     position: absolute;
-    top: 33rem;
-    left: 49rem;
+    top: 58%;
+    left: 48.5%;
     background-color: #03C04A;
     border-radius: 10rem;
-    width: 9rem;
-    height: 1.5rem;
-    font-size: 1rem;
+    width: 110px;
+    font-size: 18px;
     font-weight: bold;
     border: #03C04A;
 }
@@ -60,8 +59,8 @@ align-items: center;
 }
 .music{
     position: absolute;
-    top: 18rem;
-    left: 21rem;
+    top: 30%;
+    left: 23%;
     color: whitesmoke;
     font-size: 7rem;
     font-weight:1000;
@@ -69,28 +68,68 @@ align-items: center;
 }
 .mill{
     position: absolute;
-    top: 26rem;
-    left: 37rem;
+    top: 45%;
+    left: 38%;
     color: whitesmoke;
-    font-size: 1.8rem;
+    font-size: 25px;
     font-weight:900;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .count{
   position: absolute;
-    top: 28rem;
-    left: 50rem;
+    top: 50%;
+    left: 48%;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 30px;
     font-weight:900;
 }
 #v1{
   color: orangered;
-  width: 1rem;
+  width: 16px;
   border-radius: 10rem;
   text-align: center;
   background-color: #f8f8f6;
   border: yellow;
+}
+@media screen and (max-width: 780px){
+  .music{
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    color: whitesmoke;
+    font-size: 55px;
+    font-weight:1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mill{
+    position: absolute;
+    top: 45%;
+    left: 13%;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight:900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.count{
+  position: absolute;
+    top: 50%;
+    left: 30%;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight:900;
+} 
+.btn{
+    color: white;
+    position: absolute;
+    top: 58%;
+    left: 30%;
+    background-color: #03C04A;
+    border-radius: 10rem;
+    width: 110px;
+    font-size: 18px;
+    font-weight: bold;
+    border: #03C04A;
+}
 }
 `;
 
