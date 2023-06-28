@@ -113,7 +113,7 @@ align-items: center;
 .count{
   position: absolute;
     top: 58%;
-    left: 25%;
+    left: 55%;
     color: whitesmoke;
     font-size: 12px;
     font-weight:450;
@@ -122,7 +122,7 @@ align-items: center;
     color: white;
     position: absolute;
     top: 62%;
-    left: 15%;
+    left: 55%;
     background-color: #03C04A;
     border-radius: 10rem;
     width: 110px;
