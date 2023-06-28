@@ -60,7 +60,7 @@ align-items: center;
 }
 .music{
     position: absolute;
-    top: 20rem;
+    top: 30rem;
     left: 27rem;
     color: whitesmoke;
     font-size: 6rem;
@@ -69,7 +69,7 @@ align-items: center;
 }
 .mill{
     position: absolute;
-    top: 28rem;
+    top: 35rem;
     left: 40rem;
     color: whitesmoke;
     font-size: 1.8rem;
@@ -78,7 +78,7 @@ align-items: center;
 }
 .count{
   position: absolute;
-    top: 30rem;
+    top: 40rem;
     left: 50rem;
     color: whitesmoke;
     font-size: 1.5rem;
