@@ -61,7 +61,7 @@ align-items: center;
 .music{
     position: absolute;
     top: 30rem;
-    left: 27rem;
+    left: 20rem;
     color: whitesmoke;
     font-size: 6rem;
     font-weight:1000;
