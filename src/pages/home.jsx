@@ -91,7 +91,7 @@ align-items: center;
   background-color: #f8f8f6;
   border: yellow;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 400px){
   .music{
     position: absolute;
     top: 30%;
@@ -113,7 +113,7 @@ align-items: center;
 .count{
   position: absolute;
     top: 56%;
-    left: 45%;
+    left: 40%;
     color: whitesmoke;
     font-size: 15px;
     font-weight:450;
@@ -122,7 +122,7 @@ align-items: center;
     color: white;
     position: absolute;
     top: 62%;
-    left: 45%;
+    left: 40%;
     background-color: #03C04A;
     border-radius: 10rem;
     width: 110px;
