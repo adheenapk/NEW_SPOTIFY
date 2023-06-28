@@ -69,8 +69,8 @@ align-items: center;
 }
 .mill{
     position: absolute;
-    top: 45rem;
-    left: 40rem;
+    top: 50rem;
+    left: 16rem;
     color: whitesmoke;
     font-size: 1.8rem;
     font-weight:900;
@@ -79,7 +79,7 @@ align-items: center;
 .count{
   position: absolute;
     top: 55rem;
-    left: 50rem;
+    left: 17rem;
     color: whitesmoke;
     font-size: 1.5rem;
     font-weight:900;
