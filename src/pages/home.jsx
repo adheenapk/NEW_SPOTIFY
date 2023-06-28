@@ -112,16 +112,16 @@ align-items: center;
 }
 .count{
   position: absolute;
-    top: 60%;
-    left: 15%;
+    top: 58%;
+    left: 25%;
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 12px;
     font-weight:450;
 } 
 .btn{
     color: white;
     position: absolute;
-    top: 58%;
+    top: 62%;
     left: 15%;
     background-color: #03C04A;
     border-radius: 10rem;
