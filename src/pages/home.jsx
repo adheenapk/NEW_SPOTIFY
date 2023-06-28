@@ -112,10 +112,10 @@ align-items: center;
 }
 .count{
   position: absolute;
-    top: 58%;
+    top: 56%;
     left: 45%;
     color: whitesmoke;
-    font-size: 12px;
+    font-size: 15px;
     font-weight:450;
 } 
 .btn{
