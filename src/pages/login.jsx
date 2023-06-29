@@ -103,9 +103,8 @@ form{
     border: grey;
   }
   .check{
-    position: absolute;
-    top:350px;
-    left: -110px;
+    margin-bottom:10px;
+    margin-left:-300px;
     transform: scale(0.4);
   }
   .check label{
