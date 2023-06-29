@@ -71,6 +71,13 @@ a{
     color: #008ECC;
 }
 @media screen and (max-width: 600px){
+    .log{
+    background-color: whitesmoke;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+  
+}
 .check{
     position: absolute;
     left: -180px;
@@ -89,6 +96,7 @@ a{
     color: white;
     background-color: #008ECC;
     font-size: large;
+}
 }
 `;
 
