@@ -73,20 +73,38 @@ a{
 @media screen and (max-width: 600px){
     .log{
     background-color: whitesmoke;
-    height: 400px;
-    width: 300px;
+    height: 550px;
+    width: 400px;
     border-radius: 10px 10px 10px 10px;
   
 }
-input{
+.heading{
+    margin-top: 60px;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  label{
+    margin-left:30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  input{
     margin-left: 30px;
-    width: 350px;
-    height: 55px;
+    width: 345px;
+    height: 50px;
     border: grey;
   }
-.check{
+  .check{
     position: absolute;
-    left: -180px;
+    left: -110px;
     transform: scale(0.4);
   }
   .check label{
@@ -94,7 +112,7 @@ input{
     color: rgb(48, 47, 47);
     position: absolute;
     font-family: serif;
-    left: 280px;
+    left: 210px;
     width: 500px;
 }
 .btn input{
@@ -102,6 +120,12 @@ input{
     color: white;
     background-color: #008ECC;
     font-size: large;
+}   
+.forg{
+    text-align: center;
+    margin-top: 30px;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 }
 `;
