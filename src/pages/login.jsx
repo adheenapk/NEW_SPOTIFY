@@ -7,7 +7,8 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
-height: 930px;
+height: 100vh;
+width: 100%;
 .log{
     background-color: whitesmoke;
     height: 600px;
@@ -69,8 +70,25 @@ a{
     text-decoration: none;
     color: #008ECC;
 }
-@media all{
-    
+@media screen and (max-width: 600px){
+.check{
+    position: absolute;
+    left: -180px;
+    transform: scale(0.4);
+  }
+  .check label{
+    font-size: 40px;
+    color: rgb(48, 47, 47);
+    position: absolute;
+    font-family: serif;
+    left: 280px;
+    width: 500px;
+}
+.btn input{
+    margin-top: 80px;
+    color: white;
+    background-color: #008ECC;
+    font-size: large;
 }
 `;
 

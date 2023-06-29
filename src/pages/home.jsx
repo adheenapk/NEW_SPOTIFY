@@ -41,7 +41,7 @@ align-items: center;
     color: white;
     position: absolute;
     top: 58%;
-    left: 48.5%;
+    left: 41%;
     background-color: #03C04A;
     border-radius: 10rem;
     width: 110px;
@@ -69,7 +69,7 @@ align-items: center;
 .mill{
     position: absolute;
     top: 45%;
-    left: 38%;
+    left: 33%;
     color: whitesmoke;
     font-size: 25px;
     font-weight:900;
@@ -78,7 +78,7 @@ align-items: center;
 .count{
   position: absolute;
     top: 50%;
-    left: 48%;
+    left: 40%;
     color: whitesmoke;
     font-size: 30px;
     font-weight:900;
@@ -91,7 +91,7 @@ align-items: center;
   background-color: #f8f8f6;
   border: yellow;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
   .music{
     position: absolute;
     top: 30%;
