@@ -73,11 +73,17 @@ a{
 @media screen and (max-width: 600px){
     .log{
     background-color: whitesmoke;
-    height: 300px;
-    width: 250px;
+    height: 400px;
+    width: 300px;
     border-radius: 10px 10px 10px 10px;
   
 }
+input{
+    margin-left: 30px;
+    width: 350px;
+    height: 55px;
+    border: grey;
+  }
 .check{
     position: absolute;
     left: -180px;
