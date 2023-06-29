@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-const Container=styled.div ` background-color: #008ECC;
+const Container = styled.div` background-color: #008ECC;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -23,7 +23,7 @@ width: 100%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
-.details{
+form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -41,8 +41,8 @@ width: 100%;
     border: grey;
   }
   .check{
-    position: absolute;
-    left: 470px;
+    margin-bottom:10px;
+    margin-left:-300px;
     transform: scale(0.4);
   }
   .check label{
@@ -85,7 +85,7 @@ a{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 }
-.details{
+form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -104,6 +104,7 @@ a{
   }
   .check{
     position: absolute;
+    top:350px;
     left: -110px;
     transform: scale(0.4);
   }
@@ -132,31 +133,31 @@ a{
 
 
 function Login() {
-  const[value,setValue]=useState(null)
+    const [value, setValue] = useState(null)
 
- useEffect(()=>{document.getElementById('v1').value=value},[value])
- useEffect(()=>{document.getElementById('v2').value=value},[value])
-  return (
-    <>
-    
-    <Container>
+    useEffect(() => { document.getElementById('v1').value = value }, [value])
+    useEffect(() => { document.getElementById('v2').value = value }, [value])
+    return (
+        <>
+
+            <Container>
                 <div className="log">
                     <div className="heading">
                         Login
                     </div>
                     <form>
                         <label htmlFor="mail">E-mail</label>
-                        <input onChange={(e)=>console.log(e.target.value)} type="email" id="v1" className="id" placeholder="      Enter email" required></input>
+                        <input onChange={(e) => console.log(e.target.value)} type="email" id="v1" className="id" placeholder="      Enter email" required></input>
                         <label htmlFor="pass">Password </label>
-                        <input onChange={(e)=>console.log(e.target.value)} type="password" id="v2" className="id" placeholder="       Enter password" required></input>
-                    <div className="check">
-                        <input type="checkbox" id="checkbox"></input>
-                        <label htmlFor="checkbox">Show Password</label>
-                    </div>
-            
-                    <div className="btn">
-                        <input type="submit" value="SIGN IN"></input>
-                    </div>
+                        <input onChange={(e) => console.log(e.target.value)} type="password" id="v2" className="id" placeholder="       Enter password" required></input>
+                        <div className="check">
+                            <input type="checkbox" id="checkbox"></input>
+                            <label htmlFor="checkbox">Show Password</label>
+                        </div>
+
+                        <div className="btn">
+                            <input type="submit" value="SIGN IN"></input>
+                        </div>
                     </form>
                     <div className="forg">
                         Forgot <a href="#">Username</a> / <a href="#"> Password</a> ?
@@ -165,9 +166,9 @@ function Login() {
                 </div>
             </Container>
 
-    </>
+        </>
 
-  )
+    )
 }
 
 export default Login
