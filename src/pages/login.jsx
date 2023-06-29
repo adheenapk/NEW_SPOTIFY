@@ -104,7 +104,7 @@ form{
   }
   .check{
     margin-bottom:10px;
-    margin-left:-300px;
+    margin-left:30px;
     transform: scale(0.4);
   }
   .check label{
