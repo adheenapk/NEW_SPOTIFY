@@ -144,19 +144,20 @@ function Login() {
                     <div className="heading">
                         Login
                     </div>
-                    <div className="details">
+                    <form>
                         <label htmlFor="mail">E-mail</label>
                         <input onChange={(e)=>console.log(e.target.value)} type="email" id="v1" className="id" placeholder="      Enter email" required></input>
                         <label htmlFor="pass">Password </label>
                         <input onChange={(e)=>console.log(e.target.value)} type="password" id="v2" className="id" placeholder="       Enter password" required></input>
-                    </div>
                     <div className="check">
                         <input type="checkbox" id="checkbox"></input>
                         <label htmlFor="checkbox">Show Password</label>
                     </div>
+            
                     <div className="btn">
                         <input type="submit" value="SIGN IN"></input>
                     </div>
+                    </form>
                     <div className="forg">
                         Forgot <a href="#">Username</a> / <a href="#"> Password</a> ?
                         <div className="dont">Don't have an account? <a href="#"> Sign up</a> </div>
