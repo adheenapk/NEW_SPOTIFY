@@ -75,7 +75,7 @@ justify-content: space-between;
       background-color: black;
       position: fixed;
       top:59px;
-      left: 20%;
+      left: -120%;
     }
     .rightside ul li{
       display: block;
