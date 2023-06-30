@@ -148,7 +148,7 @@ align-items: center;
   
   .music{
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 40px;
     font-weight:1000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
