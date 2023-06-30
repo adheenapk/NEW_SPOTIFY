@@ -60,6 +60,11 @@ justify-content: space-between;
   }
 
   @media (max-width:600px){
+    .image img {
+    width: 90px;
+    height: 50px;
+    margin-left: 10px;
+  }
     .ch{
       display: block;
       margin-right: 30px;
