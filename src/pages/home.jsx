@@ -4,16 +4,29 @@ import spot from '../assets/spot.png'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
-const Navigation=styled.nav `position: absolute;
+const Navigation = styled.nav`position: absolute;
 height: 75px ;
 width: 100%;
 background: black;
-opacity: 70%;
+opacity: 70%; 
 display: flex;
 align-items: center;
 justify-content: space-between;
 
+ ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 7px 8px;
+ }
+ ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 7px 8px;
+ }
 
+.rightside a:hover{
+  background-color: #420505;
+}
 .image img {
     width: 100px;
     height: 60px;
@@ -23,16 +36,52 @@ justify-content: space-between;
   li {
     list-style: none;
     display: inline-block;
+    line-height: 70px;
   }
   
   li {
     color: white;
-    font-size: 20px;
+    font-size: 21px;
     margin-right:35px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-`;
-const Container=styled.div `display: flex;
+  .ch{
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  #check
+  {
+    display: none;
+  }
+
+  #check:checked ~ nav ul li{
+    left: 50%;
+  }
+
+  @media (max-width:600px){
+    .ch{
+      display: block;
+      margin-right: 30px;
+    }
+    .rightside ul{
+      width:100%;
+      height: 100vh;
+      background-color: black;
+      position: fixed;
+      top:59px;
+      left: -120%;
+    }
+    .rightside ul li{
+      display: block;
+      text-align: center;
+     font-size: 20px;
+     color: white;
+    }
+
+  }
+  `;
+const Container = styled.div`display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
@@ -91,13 +140,14 @@ align-items: center;
   background-color: #f8f8f6;
   border: yellow;
 }
-@media screen and (max-width: 600px){
+@media(max-width: 600px){
+  
   .music{
     position: absolute;
     top: 30%;
     left: 23%;
     color: whitesmoke;
-    font-size: 55px;
+    font-size: 66px;
     font-weight:1000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -134,9 +184,9 @@ align-items: center;
 `;
 
 function Home() {
-  const[value,setValue]=useState(0)
+  const [value, setValue] = useState(0)
 
- useEffect(()=>{document.getElementById('v1').value=value},[value])
+  useEffect(() => { document.getElementById('v1').value = value }, [value])
   return (
     <>
       <Navigation>
@@ -145,28 +195,31 @@ function Home() {
         </div>
         <div className="rightside">
           <ul>
-            <li>Premium</li>
-            <li>Help</li>
-            <li>Download</li>
+            <li><a class="active" href="#">Premium</a></li>
+            <li><a href='#'>Help</a></li>
+            <li><a href='#'>Download</a></li>
             <li>|</li>
-            <li>Sign in</li>
-            <li>Log In</li>
+            <li><a href='#'>Sign in</a></li>
+            <li><a href='login'>Log In</a></li>
           </ul>
+
         </div>
+        <input type='checkbox' id='check'></input>
+        <label htmlFor='check' className='ch'>Menu</label>
       </Navigation>
       <Container>
         <div className='bg'>
           <img src={spotify}></img>
           <div className='music'>
-          Music for everyone.
+            Music for everyone.
+          </div>
+          <div className="mill">Millions of songs.No credit card needed.
+          </div>
+          <h1 className='count'>Count : <input onChange={(e) => console.log(e.target.value)} type="text" id='v1' /></h1>
+          <button onClick={() => setValue(value + 1)} className="btn">Update</button>
+
         </div>
-        <div className="mill">Millions of songs.No credit card needed.
-        </div>
-        <h1 className='count'>Count : <input onChange={(e)=>console.log(e.target.value)} type="text"  id='v1'/></h1>
-        <button onClick={()=>setValue(value+1)} className="btn">Update</button>
-     
-        </div>
-       
+
       </Container>
 
     </>
