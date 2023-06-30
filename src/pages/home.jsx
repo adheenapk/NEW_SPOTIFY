@@ -30,7 +30,7 @@ justify-content: space-between;
 .image img {
     width: 100px;
     height: 60px;
-    margin-left: 15rem;
+    margin-left: 150px;
   }
   
   li {
@@ -120,7 +120,7 @@ align-items: center;
 }
 .music{
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 90px;
     font-weight:1000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
