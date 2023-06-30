@@ -55,9 +55,9 @@ justify-content: space-between;
     display: none;
   }
 
-  #check:checked ~ nav ul li{
-    left: 50%;
-  }
+  #check:checked ~ .rightside  ul{
+    left: 0%;
+  } 
 
   @media (max-width:600px){
     .image img {
@@ -65,19 +65,24 @@ justify-content: space-between;
     height: 50px;
     margin-left: 10px;
   }
+ .rightside .no{
+  display: none;
+ }
     .ch{
       display: block;
-      margin-right: 30px;
+      position: absolute;
+      right: 30px;
     }
     .rightside ul{
-      width:100%;
+      width: 100%;
       height: 100vh;
-      background-color: black;
       position: fixed;
+      background-color: black;
       top:59px;
-      left: -120%;
+      left: -110%;
     }
     .rightside ul li{
+      background-color: black;
       display: block;
       text-align: center;
      font-size: 20px;
@@ -93,9 +98,6 @@ align-items: center;
 
 .btn{
     color: white;
-    position: absolute;
-    top: 58%;
-    left: 41%;
     background-color: #03C04A;
     border-radius: 10rem;
     width: 110px;
@@ -104,35 +106,32 @@ align-items: center;
     border: #03C04A;
 }
 
-.bg img{
+.bg {
+  background-image: url(${spotify});
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-size: 100% 100%;
     height: 100vh;
     width: 100%;
   
 }
 .music{
-    position: absolute;
-    top: 30%;
-    left: 23%;
     color: whitesmoke;
     font-size: 7rem;
     font-weight:1000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .mill{
-    position: absolute;
-    top: 45%;
-    left: 33%;
+
     color: whitesmoke;
     font-size: 25px;
     font-weight:900;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .count{
-  position: absolute;
-    top: 50%;
-    left: 40%;
     color: whitesmoke;
     font-size: 30px;
     font-weight:900;
@@ -148,36 +147,25 @@ align-items: center;
 @media(max-width: 600px){
   
   .music{
-    position: absolute;
-    top: 30%;
-    left: 23%;
     color: whitesmoke;
-    font-size: 66px;
+    font-size: 50px;
     font-weight:1000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .mill{
-    position: absolute;
-    top: 50%;
-    left: 15%;
+
     color: whitesmoke;
     font-size: 15px;
     font-weight:450;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .count{
-  position: absolute;
-    top: 56%;
-    left: 40%;
     color: whitesmoke;
     font-size: 15px;
     font-weight:450;
 } 
 .btn{
     color: white;
-    position: absolute;
-    top: 62%;
-    left: 38%;
     background-color: #03C04A;
     border-radius: 10rem;
     width: 110px;
@@ -195,26 +183,28 @@ function Home() {
   return (
     <>
       <Navigation>
+    
         <div className="image">
           <img src={spot}></img>
         </div>
+          <input type='checkbox' className='chk' id='check'></input>
+        <label htmlFor='check' className='ch'>Menu</label>
         <div className="rightside">
           <ul>
             <li><a class="active" href="#">Premium</a></li>
             <li><a href='#'>Help</a></li>
             <li><a href='#'>Download</a></li>
-            <li>|</li>
+            <li className="no">|</li>
             <li><a href='#'>Sign in</a></li>
             <li><a href='login'>Log In</a></li>
           </ul>
 
         </div>
-        <input type='checkbox' id='check'></input>
-        <label htmlFor='check' className='ch'>Menu</label>
+
       </Navigation>
       <Container>
         <div className='bg'>
-          <img src={spotify}></img>
+
           <div className='music'>
             Music for everyone.
           </div>
