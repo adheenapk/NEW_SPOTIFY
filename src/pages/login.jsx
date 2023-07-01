@@ -131,9 +131,19 @@ form{
 `;
 
 
-function Login() {
-    const [value, setValue] = useState(null)
 
+function Login() {
+    
+    const [value, setValue] = useState(null);
+
+    function myFunction(){
+        var show=document.getElementById('v2');
+        if(show.type=='password')
+         show.type='text';
+    else
+        show.type='password';
+    
+    }
     useEffect(() => { document.getElementById('v1').value = value }, [value])
     useEffect(() => { document.getElementById('v2').value = value }, [value])
     return (
@@ -150,7 +160,7 @@ function Login() {
                         <label htmlFor="pass">Password </label>
                         <input onChange={(e) => console.log(e.target.value)} type="password" id="v2" className="id" placeholder="       Enter password" required></input>
                         <div className="check">
-                            <input type="checkbox" id="checkbox"></input>
+                            <input onClick={myFunction} type="checkbox" id="checkbox"></input>
                             <label htmlFor="checkbox">Show Password</label>
                         </div>
 
@@ -169,5 +179,6 @@ function Login() {
 
     )
 }
+
 
 export default Login
